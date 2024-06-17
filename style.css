@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #005681), url(bc.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 45%;
+}
+
+.hero {
+    text-align: center;
+    color: rgb(168, 214, 255);
+    padding-top: 180px;
+}
+
+.hero h1 {
+    font-size: 130px;
+}
+
+.hero p {
+    font-size: 40px;
+    font-style: italic;
+    margin: 30px;
+    padding: 10px;
+}
+
+.btn {
+    margin: 70px auto 0;
+}
+
+.btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: rgb(0, 217, 255);
+    border: 0.5px solid rgb(232, 223, 255);
+    position: relative;
+    z-index: 1;
+    transition: color 0.7s;
+}
+
+.btn a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(59, 206, 255);
+    z-index: -1;
+    transition: 0.7s;
+}
+
+.btn a:hover span {
+    width: 100%;
+}
+
+.btn a:hover {
+    color: rgb(255, 255, 255);
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #myNavbar {
+    height: 100%;
+    width: 0; /* Initial state is hidden */
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0; /* Positioned on the right side */
+    background-color: #0182be8a; /* Darker shade for modern look */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: width 0.7s; /* Smooth transition for opening/closing */
+
+  }
+  
+  #myNavbar a {
+    padding: 20px 40px; /* Uniform padding */
+    text-decoration: none;
+    font-size: 20px; /* Slightly smaller font size for modern look */
+    color: #ddd; /* Light grey color for text */
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 50px;
+    padding-left: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+  }
+  
+  #myNavbar a:hover {
+    color: #fff; /* White color on hover for contrast */
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openNav {
+      cursor:pointer; 
+      color:white; 
+      background-color:#01e6ff89; /* Match navbar color */
+      padding:10px; 
+      margin:10px; 
+      border:none;
+      z-index: 10;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      .content-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+    
+    .content-container {
+        display: flex; /* Establishes a flex container */
+        justify-content: center; /* Centers flex items on the main axis */
+        align-items: flex-start; /* Aligns items to the start of the cross axis */
+        background-image: url(bc2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+    
+    .video-container,
+    .text-container {
+        flex: 1; /* Assigns flex-grow factor of 1 to both containers */
+    }
+    
+    .video-container { /* Adds space between the video and text containers */
+    }
+    
+    .text-container {
+    /* Adds space between the text and video containers */
+    }
+    .text-container p {
+        background-color: #f0f0f0; /* Light grey background */
+        font-family: 'Arial', sans-serif; /* Change the font */
+        color: #333; /* Dark grey text color */
+        -webkit-text-stroke: 1px #000; /* Stroke effect */
+        font-style: italic; /* Italic style */
+        padding: 20px; /* Padding inside the background */
+        border-radius: 15px; /* Rounded corners for the background */
+        font-size: xx-large;
+        margin-top: 120px;
+        margin-right: 100px;
+    }
+    footer {
+        background-color: #333; /* Dark background for the footer */
+        color: #fff; /* White text color */
+        text-align: center; /* Center align the text */
+        padding: 20px 0; /* Padding on top and bottom */
+        font-family: 'Arial', sans-serif; /* Stylish font */
+    }
+    
+    footer p {
+        margin: 10px 0; /* Spacing between paragraphs */
+    }
+    
+    footer a {
+        color: #4da6ff; /* Light blue color for links */
+        text-decoration: none; /* No underline on links */
+    }
+    
+    footer a:hover {
+        text-decoration: underline; /* Underline on hover for links */
+    }
+    
+    footer div {
+        margin-top: 20px; /* Space above the social media links */
+    }
+    
+    /* Social Media Icons - You can use actual icons with classes instead of text links */
+    footer a[target="_blank"]:before {
+        content: '🔗 '; /* Adds a link symbol before social media text links */
+    }
+    /* Overlay styles */
+#overlay {
+    position: fixed; /* Fixed position to cover the whole screen */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9); /* Black background with opacity */
+    z-index: 2; /* Sit on top of other content */
+    cursor: pointer; /* Change cursor to indicate clickable */
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%); /* Center the text */
+}

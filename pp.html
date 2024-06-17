@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Overlay -->
+    <div id="overlay" onclick="off()">
+        <div id="text">SHUB<br>KULDEEP<br>PIKAMAN<br>ACE FURY XD</div>
+    </div>
+
+    <!-- Navbar -->
+    <div id="myNavbar" class="navbar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#home">Home</a>
+        <a href="#harem" id="haremLink">HAREM members</a>
+        <a href="#contact">Contact us</a>
+        <a href="#about">About</a>
+    </div>
+    <button class="openNav" onclick="openNav()">☰ Options</button>
+
+    <!-- Banner -->
+    <section id="banner">
+        <img src="logo.jpg" class="logo">
+        <div class="hero">
+            <h1>The Enlighten One</h1>
+            <p>THE BEST GAMING CONTENT ON YOUTUBE</p>
+            <div class="btn">
+                <a href="https://www.youtube.com/channel/UCgkqpa3_FFE_MKZK_cxWbXA?sub_confirmation=1" target="_blank">SUBSCRIBE</a>
+                <a href="#"><span></span> JOIN NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <div class="content-container">  <div class="video-container">
+        <!-- Replace 'VIDEO_ID' with your actual YouTube video ID -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tBHZ0x3VFMs?si=fJCP7cjZv0uzcMR1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="text-container">
+        <!-- Add your written content here -->
+        <p>" WATCH SOME EXCITING GAMING &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTENT"</p>
+    
+    </div>
+        <!-- ... rest of your content ... -->
+    </div>
+    <footer>
+        <p>© 2024 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;TheEnlightenone.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved.</p>
+        <p>Contact us at: <a href="aryansinghk14king@gmail.com">aryansinghk14king@gmail.com</a></p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <!-- Social Media Icons -->
+        <div>
+            <a href="your-facebook-url" target="_blank">Facebook</a>
+            <a href="your-twitter-url" target="_blank">Twitter</a>
+            <!-- Add more social links as needed -->
+        </div>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+
+    <!-- Footer -->
+    <!-- ... your footer content ... -->
+
+    <!-- Scripts -->
+    <script>
+        // Navbar functions
+        function openNav() {
+            document.getElementById("myNavbar").style.width = "250px";
+            document.querySelector(".openNav").style.display = "none";
+        }
+        
+        function closeNav() {
+            document.getElementById("myNavbar").style.width = "0";
+            document.querySelector(".openNav").style.display = "block";
+        }
+
+        // Overlay functions
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+
+        // Event listener for HAREM members link
+        document.getElementById("haremLink").addEventListener("click", on);
+    </script>
+</body>
+</html>
